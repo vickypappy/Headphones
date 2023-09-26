@@ -19,42 +19,42 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
-header{
-  padding: 27px 17%;
+.navbar{
+  padding: 12px 15% 0 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 .navbar img{
-  width: 30px;  
+  width: 33px;  
 }
 .h-right a{
-  margin-right: 5rem;
+  margin-right: 4rem;
   color: var(--main-color);
-  font-size: 20px;
+  font-size: 15px;
 }
 .h-right a:hover{
   cursor: pointer;
   color: var(--text-color);
 }
 .font-content{
-  padding-left: 47%;
-  margin-top: 3rem;
-  max-width: 75%;
+  padding-left: 50%;
+  margin-top: 3.2rem;
+  max-width: 100%;
 }
 .font-content .first{
-  font-size: 20px;
+  font-size: 17px;
 }
 .home img{
   position: absolute;
-  left: 22%;
-  top: -150px;
-  width: 18%;
+  left: 20%;
+  top: -180px;
+  max-width: 22%;
   height: auto;
 }
 .font h1{
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 800;
   color:#202020;
   padding-left: 7%;
@@ -62,16 +62,17 @@ header{
 .font h2{
   font-size: 4rem;
   margin-top: -40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .font h3{
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 .font p{
   line-height: 2rem;
   color: var(--main-color);
+  max-width: 65%;
 }
 .price{
   font-weight: 800;
@@ -81,16 +82,19 @@ header{
 .mini-box{
   background: #0d0b0bf4;
   width: 190px;
-  padding: 15px 25px;
+  padding: 17px;
   border-radius: 5px;
   margin-top: 40px;
+}
+.mini-box p{
+  display: inline;
+  line-height: 1;
+  padding-left: 10px;
+  color: var(--text-color);
 }
 .mini-box:hover{
   cursor: pointer;
   background: #202020;
-}
-.mini-box p{
-  color: var(--text-color);
 }
 .sponsor{
   display: flex;
@@ -100,7 +104,7 @@ header{
   margin-top: 8rem;
 }
 .sponsor img{
-  width: 100px;
+  max-width: 100px;
   height: 27px;
 }
 .spec-content{
@@ -130,9 +134,9 @@ header{
 }
 #move img{
   position: absolute;
-  left: 800px;
-  top: 1100px;
-  width: 18%;
+  left: 700px;
+  top: 150px;
+  max-width: 23%;
   height: auto;
 }
 .case h2{
@@ -144,16 +148,16 @@ header{
 .case-box{
   max-width: 75%;
   padding-left: 40%;
-  margin-bottom: 20rem;
+  margin-bottom: 17rem;
 }
 .case-content{
-  padding-left: 24%;
+  padding-left: 40%;
   margin-top: 11rem;
-  max-width: 65%;
   
 }
 .case-content .first{
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 2rem;
   color: var(--main-color);
 }
 .case-content .mini-box{
@@ -161,34 +165,44 @@ header{
   
 }
 .case-image img{
-  width: 18%;
+  width: 23%;
   height: auto;
   position: absolute;
-  left: 450px;
+  left: 350px;
+}
+section{
+  position: relative;
 }
 .discount{
   /* display: flex;
   text-align: center;
   justify-content: center; */
-  width: 55%;
+  max-width: 70%;
   height: auto;
   background: #202020;
-  margin-bottom: 10rem;
-  margin-left: 20%;
-  padding: 60px;
+  /* margin-bottom: 10rem; */
+  /* margin-left: 20%; */
+  margin: 0 auto;
+  
+  padding:  70px 70px;
   border-radius: 10px;
 }
 .discount-content{
   padding-left: 70px;
 }
+/* .discount .discount-content h4, p{
+  padding-left: 70px;
+} */
 .discount h4{
   font-size: 30px;
   font-weight: 800;
 }
+
 .discount-image img{
-  width: 20%;
-  left: 800px;
-  top: 2460px;
+  width: 25%;
+  height: auto;
+  right: 300px;
+  top: 50px;
   position: absolute;
 }
 .discount p{
@@ -205,18 +219,18 @@ header{
   font-size: 6rem;
   font-weight: 800;
   margin-bottom: 3rem;
+  margin-top: 10rem;
   padding-left: 37%;
   line-height: 5rem;
 }
 .left{
-  margin-left: 45px;
+  margin-left: 55px;
   color: #202020;
 }
 .product-content{
   display: flex;
   flex-wrap: wrap;
   column-gap: 1rem;
-  /* row-gap: 1rem; */
   margin-left: 30%;
   width: 700px;
   margin-bottom: 5rem;
@@ -255,10 +269,13 @@ span{
 }
 .footer{
   margin-bottom: 7rem;
-  padding: 27px 20%;
+  padding: 0 17%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 7rem;
+}
+.footer img{
+  width: 33px;
 }
 .footer-box{
   display: flex;
@@ -269,12 +286,11 @@ span{
 }
 .social a{
   display: inline-flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   margin-right: 15px;
-  font-size: 20px;
   border-radius: 5px;
   background: #202020;
   color: var(--text-color);
